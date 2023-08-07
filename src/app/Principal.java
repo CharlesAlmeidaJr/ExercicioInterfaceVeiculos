@@ -33,7 +33,8 @@ public class Principal {
 
                         veiculos.add(new Onibus(placa, ano, assentos));
                     } catch (Exception e) {
-                        opcao = "0";
+                    	System.out.println("Valor invalido");
+                    	opcao = scan.next();;
                     }
 
                 break;
@@ -51,7 +52,8 @@ public class Principal {
 
                         veiculos.add(new Caminhao(placa, ano, eixos));
                     } catch (Exception e) {
-                        opcao = "0";
+                    	System.out.println("Valor invalido");
+                    	opcao = scan.next();;
                     }
                 break;
 
